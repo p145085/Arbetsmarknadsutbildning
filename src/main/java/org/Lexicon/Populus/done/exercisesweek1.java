@@ -1,4 +1,4 @@
-package org.Lexicon.Populus;
+package org.Lexicon.Populus.done;
 
 import java.util.Scanner;
 
@@ -36,7 +36,6 @@ public class exercisesweek1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("1, *, /, +, -, %.");
         System.out.print("Enter input: ");
-        //TODO why is it not stopping for an input here?
         String menuSelection = scanner.nextLine();
 
         switch (menuSelection) {
