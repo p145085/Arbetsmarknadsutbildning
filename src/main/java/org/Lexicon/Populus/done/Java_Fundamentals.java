@@ -3,6 +3,28 @@ import java.util.Scanner;
 
 public class Java_Fundamentals
 {
+    public static void main( String[] args ) {
+        Scanner scanner = new Scanner(System.in);
+        int quitSelector = 0;
+        System.out.println("Select which exercise you would like to run. (1-4).");
+        String menuSelection = scanner.next();
+
+        while (quitSelector == 0) {
+            switch (menuSelection) {
+                case "1":
+                    one();
+                case "2":
+                    two();
+                case "3":
+                    three();
+                case "4":
+                    four();
+                case "q":
+                    quitSelector = 1;
+                    break;
+            }
+        }
+    }
     public static void one() {
         //Create a String with your first name as content. Print out the String object to the console.
         //Create two Strings. One with your first name and the other with your last name. Print out both Strings to the console with a " " separating them.
@@ -68,11 +90,5 @@ public class Java_Fundamentals
             System.out.println("You FAILED.");
         }
     }
-    public static void main( String[] args )
-    {
-//        one();
-//        two();
-//        three();
-//        four();
-    }
+
 }

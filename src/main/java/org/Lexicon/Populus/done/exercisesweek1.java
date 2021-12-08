@@ -3,6 +3,20 @@ package org.Lexicon.Populus.done;
 import java.util.Scanner;
 
 public class exercisesweek1 {
+    public static void main(String[] args) {
+        //6. Create a program that asks user to input two numbers and print the
+        //sum/multiplication/division and subtraction of given numbers
+        //See #3.
+
+        one();
+        two();
+        three();
+        four();
+        five();
+        //six();
+        seven();
+        eight();
+    }
     public static int getRandomNumber(int min, int max) {
         return (int) ((Math.random() * (max - min)) + min);
     }
@@ -151,19 +165,5 @@ public class exercisesweek1 {
         if (guess == winningNumber) {
             System.out.println("Your guess was correct. Winner!");
         }
-    }
-    public static void main(String[] args) {
-        //6. Create a program that asks user to input two numbers and print the
-        //sum/multiplication/division and subtraction of given numbers
-        //See #3.
-
-        one();
-        two();
-        three();
-        four();
-        five();
-        //six();
-        seven();
-        eight();
     }
 }
